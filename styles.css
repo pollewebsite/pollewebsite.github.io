@@ -48,3 +48,10 @@ body {
     font-size: 1.15em;
     color: crimson;
 }
+
+@media (max-width: 576px) {
+    #contact-info {
+        display: none !important;
+    }
+}
+
