@@ -4,6 +4,7 @@ body {
 
 #logo-contacts {
     margin-top: 2em;
+    margin-bottom: 1.5em;
 }
 
 #lang-share div:first-child {
@@ -49,9 +50,76 @@ body {
     color: crimson;
 }
 
+
 @media (max-width: 576px) {
     #contact-info {
         display: none !important;
     }
+
+    #lang-share {
+        display: none;
+    }
+
+    nav#menu-desktop {
+        display: none;
+    }
+
+    nav#mobile-menu {
+        position: fixed;
+        top: -1px;
+        left: 0;
+        right: 0;
+        padding-top: 0.75em;
+        padding-right: 1.5em;
+        padding-bottom: 0.75em;
+        padding-left: 1.5em;
+        background-color: #000000;
+        z-index: 1500;
+    }
+
+    nav#mobile-menu i, nav#mobile-menu .cart a {
+        color: white;
+        font-weight: 400;
+    }
+
+    nav#mobile-menu .cart i {
+        color: crimson;
+    }
+
+    .dropdown-menu.mobile {
+        position: fixed;
+        top: 2.5em;
+        padding-left: 1.5em;
+        border: none;
+        background-color: #000000;
+        width: 100%;
+        z-index: 1500;
+    }
+
+    .dropdown-menu.mobile a {
+        color: white;
+        font-weight: 400;
+
+    }
+    .dropdown-menu.mobile a.active {
+        background-color: #000000;
+    }
+
+    #logo-contacts {
+        padding-top: 2em;
+    }
+
+    nav#mobile-menu .nav-link {
+        padding: 0;
+    }
 }
 
+@media (min-width: 577px) {
+    nav#mobile-menu {
+        display: none;
+    }
+}
+
+.nav-link:hover {
+    border: none;
+}

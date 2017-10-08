@@ -22,6 +22,28 @@
 <body>
 
 <div id="main" class="container-fluid">
+    <nav id="mobile-menu" class="row justify-content-between align-items-end">
+        <div class="nav-item dropdown col-6">
+            <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="dropdown-menu mobile">
+                <a class="dropdown-item nav-link" href="#home" data-toggle="tab" role="tab">Главная<span class="sr-only">(current)</span></a>
+                <a class="dropdown-item nav-link" href="#about-us" data-toggle="tab" role="tab">О нас</a>
+                <a class="dropdown-item nav-link" href="#pay-delivery" data-toggle="tab" role="tab">Доставка и оплата</a>
+                <p class="dropdown-item nav-link">
+                    <a class=lang-btn lang-active ru" href="#" aria-pressed="true">RU</a>,
+                    <a class="lang-btn ua" href="#">UA</a>,
+                    <a class="lang-btn en" href="#">EN</a>
+                </p>
+
+            </div>
+        </div>
+        <div class="nav-item cart col-6 text-right">
+            <a href="#cart"><i class="fa fa-shopping-cart"></i> Мои вещи</a>
+        </div>
+    </nav>
+
     <header id="logo-contacts" class="row justify-content-around align-items-end">
         <div id="lang-share" class="col-sm-3 col-12 float-sm-left float-right">
             <div class="row justify-content-between">
@@ -36,8 +58,6 @@
                     <a class="lang-btn ua" href="#">UA</a>
                     <span class="lang-separator"> | </span>
                     <a class="lang-btn en" href="#">EN</a>
-                    <span class="lang-separator"> | </span>
-                    <a class="lang-btn de" href="#">DE</a>
                 </div>
             </div>
         </div>
@@ -54,9 +74,22 @@
         </div>
     </header>
 
-    <nav id="main-menu">
 
+    <nav id="menu-desktop" class="nav nav-tabs nav-justified" role="tablist">
+        <div class="nav-item">
+            <a class="nav-link active" href="#home" data-toggle="tab" role="tab">Главная<span class="sr-only">(current)</span></a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="#about-us" data-toggle="tab" role="tab">О нас</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="#pay-delivery" data-toggle="tab" role="tab">Доставка и оплата</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="#cart" data-toggle="tab" role="tab"><i class="fa fa-shopping-cart"></i> Мои вещи</a>
+        </div>
     </nav>
+
 </div>
 
 </body>
