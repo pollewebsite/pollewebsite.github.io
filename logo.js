@@ -4,7 +4,7 @@ d3.xml("svg/logo_Poll'e_new.svg").mimeType("image/svg+xml").get(function (error,
    var logo_svg = d3.select("#logo")
         .append('svg')
         .attr('width', '100%')
-        .attr('height', '4em');
+        .attr('height', '100%');
 
    logo_svg.node()
         .appendChild($(xml.documentElement).find('#layer1').get(0));
