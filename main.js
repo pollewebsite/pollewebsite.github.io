@@ -25,53 +25,6 @@ d3.csv(items_link, function (error, products) {
         d.price = +d.price;
     });
 
-    //// add products
-    // var productGalleryItems = d3.select('div#featured-items-gallery div.carousel-inner div.row')
-    //     .selectAll('div.featured-product')
-    //     .data(products)
-    //     .enter()
-    //     .append('div')
-    //     .attr('class', function (d, i) {
-    //         var classes = ['carousel-item', 'row', 'align-items-end'];
-    //         if (i === 0) {  classes.push('active');  }
-    //         return classes.join(' ');
-    //     });
-    //
-    // var productDivs = productGalleryItems.append('div')
-    //     .attr('id', function (d) {  return d.p_id;  })
-    //     .attr('class', 'featured-product col-md-4 col-sm-6 col-12');
-    //
-    // var productRow = productDivs.append('div')
-    //     .attr('class', 'row justify-content-center');
-    //
-    // productRow.append('figure')
-    //     .attr('class', 'col-12')
-    //     .append('img')
-    //     .attr('src', function (d) {  return d.picture_url;  })
-    //     .attr('class', 'd-block img-fluid')
-    //     .attr('alt', function (d) {  return "Poll'e - уютная домашняя одежда, текстиль. " + d.name;  });
-    //
-    // $('.carousel').carousel({
-    //     interval: false
-    // });
-    //
-    // if ($(window).width() > 575) {
-    //     $('#featured-items-gallery .carousel-item').each(function(){
-    //         var next = $(this).next();
-    //         if (!next.length) {
-    //             next = $(this).siblings(':first');
-    //         }
-    //         next.children(':first-child').clone().appendTo($(this));
-    //
-    //         if (next.next().length>0) {
-    //             next.next().children(':first-child').clone().appendTo($(this));
-    //         }
-    //         else {
-    //             $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-    //         }
-    //     });
-    // }
-
     var productGalleryItems = d3.select('div#featured-items-gallery')
         .selectAll('div.featured-product')
         .data(products)
